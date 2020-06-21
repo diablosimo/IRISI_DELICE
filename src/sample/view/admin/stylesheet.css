@@ -1,0 +1,198 @@
+.parent{
+    -fx-background-color: #fff;
+}
+
+.combo-box-base{
+    -fx-background-color: white;
+    -fx-border-color: #c0c0c0;
+    -fx-border-width: 1 1 1 1;
+}
+
+.check-combo-box-base{
+    -fx-background-color: white;
+    -fx-border-color: #c0c0c0;
+    -fx-border-width: 1 1 1 1;
+}
+
+#login{
+    -fx-background-image: url("resources/background.jpg");
+    -fx-background-size: 100%;
+}
+
+.principal-bg{
+    -fx-background-image: url("resources/background.jpg");
+    -fx-background-size: 100%;
+}
+
+.app{
+    /*-fx-background-image: url("resource/bg_app.jpg");*/
+    -fx-background-size: 100%;
+}
+.sidebar{
+    -fx-background-color: #CA1734;
+}
+.sidebar-icons{
+    -fx-fill: #96989a;
+}
+.button:hover{
+    -fx-background-color: #333645;
+}
+.button:pressed{
+    -fx-background-color: #333645;
+}
+.button{
+    -fx-background-color: #333645;
+    -fx-border-color:#333645;
+}
+.button-ok{
+    -fx-background-color: #CA1734;
+    -fx-border-color:none;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #FFFFFF;
+}
+.button-cancel{
+    -fx-background-color: #000000;
+    -fx-border-color:none;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.header{
+    -fx-background-color: #CA1734;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * CheckBox                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+.check-box > .box {
+    -fx-background-radius: 3;
+    /*-fx-padding: 0.166667em 0.166667em 0.25em 0.25em; !* 2 2 3 3 *!*/
+    -fx-padding:0;
+    -fx-border-color: #c0c0c0;
+    -fx-border-radius: 3;
+    -fx-background-color: white;
+}
+.check-box > .box > .mark {
+    -fx-background-color: null;
+    -fx-padding: 0.416667em 0.416667em 0.5em 0.5em; /* 5 5 6 6 */
+    -fx-shape: "M927.936 272.992l-68.288-68.288c-12.608-12.576-32.96-12.576-45.536 0l-409.44 409.44-194.752-196.16c-12.576-12.576-32.928-12.576-45.536 0l-68.288 68.288c-12.576 12.608-12.576 32.96 0 45.536l285.568 287.488c12.576 12.576 32.96 12.576 45.536 0l500.736-500.768c12.576-12.544 12.576-32.96 0-45.536z";
+    -fx-background-insets: -3 -3 1 0;
+}
+.check-box {
+    -fx-label-padding: 0.2em 0.0em 0.3em 0.416667em; /* 0 0 0 5 */
+    -fx-text-fill: -fx-text-background-color;
+    -fx-padding: 0 0 2 0;
+}
+.check-box:indeterminate > .box {
+    -fx-padding: 0;
+}
+.check-box:selected > .box > .mark {
+    -fx-background-color: linear-gradient(to bottom, #CA1734, #CA1734);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * RadioButton                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+
+.radio-button {
+    -fx-label-padding: 0.0em 0.0em 0.1em 0.416667em; /* 0 0 0 5 */
+    -fx-text-fill: -fx-text-background-color;
+    -fx-padding: 0 0 .5 0;
+}
+.radio-button > .radio,
+.radio-button:focused > .radio  {
+    -fx-border-color: #c0c0c0;
+    -fx-border-radius: 1em;
+    -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+    -fx-padding: 1 2 3 2;
+    -fx-background-color: white;
+}
+.radio-button > .radio > .dot {
+    -fx-background-color: transparent;
+    -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+    -fx-padding: 0.333333em; /* 4 -- radius of the inner black dot when selected */
+    -fx-background-insets: 3 2 1 2;
+}
+.radio-button:selected > .radio,.radio-button:hover > .radio {
+    -fx-fill-color: #CA1734;
+}
+.radio-button:pressed > .radio {
+    -fx-background-color: #CA1734;
+}
+.radio-button:selected > .radio > .dot {
+    -fx-background-color: #CA1734;
+    -fx-font-size: 17px;
+}
+
+/*common things*/
+.check-box:hover > .box,
+.check-box:selected > .box,
+.radio-button:hover > .radio,
+.radio-button:selected > .radio {
+    -fx-background-color: linear-gradient(to bottom, white, #efefef);
+}
+
+.check-box:pressed > .box,
+.radio-button:pressed > .radio {
+    -fx-background-color: #CA1734;
+}
+
+/*table view columns*/
+.filler,.column-header,.show-hide-columns-button {
+    -fx-background-color: #ffffff, #333645, #333645;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+.show-hide-columns-button {
+    -fx-border-width: 0;
+    -fx-background-insets: 0 0 1 1;
+}
+
+.chart-bar {
+    -fx-bar-fill: #CA1734;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #ffffff;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #ffffff;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #ca1734;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.column-header-background > .filler {
+    -fx-border-color: rgba(132, 104, 71, 0) #dddddd transparent transparent;
+    -fx-border-insets: 0 1 0 0;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #ca1734;
+    -fx-text-fill: white;
+}
+
+.list-cell:even {
+    -fx-background-color: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #333645;
+    -fx-text-fill: white;
+}
+

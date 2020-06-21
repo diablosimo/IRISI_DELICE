@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="80.0" prefWidth="1200.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.client.NavbarController">
+   <children>
+      <VBox prefHeight="116.0" prefWidth="1200.0">
+         <children>
+            <HBox prefHeight="90.0" prefWidth="1200.0" styleClass="sidebar">
+               <children>
+                  <HBox prefHeight="90.0" prefWidth="90.0">
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="90.0" prefWidth="540.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#gotoMenu" prefHeight="90.0" prefWidth="456.0">
+                           <graphic>
+                              <Label text="Commander" textFill="WHITE">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="90.0" prefWidth="569.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#gotoCommandes" prefHeight="90.0" prefWidth="484.0">
+                           <graphic>
+                              <Label text="Mes commandes" textFill="WHITE">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="90.0" prefWidth="247.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#disconnect" prefHeight="90.0" prefWidth="570.0">
+                           <graphic>
+                              <Label text="Déconnexion" textFill="WHITE">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="28.0" prefWidth="888.0" style="-fx-background-color: #CA1734;">
+               <children>
+                  <Label text="Connecté en tant que: ">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <Label fx:id="usernameLabel" text="Label">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="900.0" styleClass="principal-bg" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.admin.DashboardController">
+    <children>
+        <fx:include fx:id="navbar" source="sidebar.fxml" />
+      <PieChart fx:id="catPieChart" layoutX="355.0" layoutY="37.0" prefHeight="320.0" prefWidth="333.0" style="-fx-background-color: #e0e1e1;" />
+      <Label fx:id="caption" layoutX="700.0" layoutY="118.0" prefHeight="17.0" prefWidth="65.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="platBarChart" layoutX="162.0" layoutY="378.0" prefHeight="400.0" prefWidth="719.0" style="-fx-background-color: #e0e1e1;">
+        <xAxis>
+          <CategoryAxis fx:id="platAxis" label="plats" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="nbCmdAxis" label="nombre des commandes" side="LEFT" />
+        </yAxis>
+      </BarChart>
+    </children>
+</AnchorPane>

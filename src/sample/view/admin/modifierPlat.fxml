@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mp" prefHeight="454.0" prefWidth="529.0" styleClass="principal-bg" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.admin.UpdatePlatController">
+   <children>
+      <TextField fx:id="modifiedNomField" layoutX="136.0" layoutY="117.0" prefHeight="40.0" prefWidth="179.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="17.0" layoutY="124.0" text="Nom du plat:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="modifiedPrixField" layoutX="136.0" layoutY="177.0" prefHeight="40.0" prefWidth="179.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="20.0" layoutY="184.0" text="Prix (en DH):">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="71.0" layoutY="373.0" mnemonicParsing="false" onAction="#modifier" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #252525; -fx-border-color: none;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="modifiedCategorieCB" layoutX="136.0" layoutY="233.0" prefHeight="40.0" prefWidth="179.0" promptText="--SELECTONNER--" style="-fx-background-radius: 20;" />
+      <Label layoutX="17.0" layoutY="240.0" text="Categorie: ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="308.0" text="Image: ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="135.0" layoutY="301.0" mnemonicParsing="false" onAction="#selectionnerModifiedImage" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: #252525; -fx-border-color: none;" text="Selectionner..." textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageView" fitHeight="225.0" fitWidth="186.0" layoutX="326.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="121.0" layoutY="33.0" text="Modification du plat">
+         <font>
+            <Font name="Berlin Sans FB" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

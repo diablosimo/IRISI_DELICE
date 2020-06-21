@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="842.0" prefWidth="888.0" styleClass="principal-bg" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.client.MesCommandeController">
+    <children>
+        <fx:include fx:id="navbar" source="navbar.fxml" />
+      <TableView fx:id="commandeTable" layoutX="24.0" layoutY="244.0" prefHeight="278.0" prefWidth="647.0">
+        <columns>
+          <TableColumn fx:id="dateCommandeColumn" prefWidth="126.0" text="date de commande" />
+          <TableColumn fx:id="adresseLivraisonColumn" prefWidth="238.0" text="adresse de livraison" />
+            <TableColumn fx:id="montantTotalColumn" prefWidth="134.0" text="montant total (EN DH)" />
+            <TableColumn fx:id="statutColumn" prefWidth="147.0" text="statut" />
+        </columns>
+      </TableView>
+      <TableView fx:id="ligneCommandeTable" layoutX="688.0" layoutY="244.0" prefHeight="278.0" prefWidth="498.0">
+        <columns>
+          <TableColumn fx:id="platColumn" prefWidth="185.0" text="plat" />
+          <TableColumn fx:id="quantiteColumn" prefWidth="55.0" text="quantité" />
+            <TableColumn fx:id="prixUColumn" prefWidth="122.0" text="prix unitaire (en DH)" />
+            <TableColumn fx:id="montantLigneColumn" prefWidth="135.0" text="prix unitaire * quantité" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
